@@ -5,7 +5,6 @@ const api = axios.create({
   withCredentials: true,
 });
 
-// Centralized error handler
 const handleError = (error) => {
   if (error.response && error.response.data && error.response.data.msg) {
     throw new Error(error.response.data.msg);
@@ -13,7 +12,6 @@ const handleError = (error) => {
   throw error;
 };
 
-// fruits
 export const getAllfruits = async () => {
   try {
     const res = await api.get("/fruits");
@@ -68,7 +66,6 @@ export const getfruitByName = async (name) => {
   }
 };
 
-// Bookings
 export const createBooking = async (data) => {
   try {
     const res = await api.post("/bookings", data);
@@ -105,7 +102,6 @@ export const updateBookingStatus = async (id, status) => {
   }
 };
 
-// Users
 export const getProfile = async () => {
   try {
     const res = await api.get("/users/profile");
@@ -151,7 +147,6 @@ export const unblockUser = async (id) => {
   }
 };
 
-// Auth
 export const login = async (data) => {
   try {
     const res = await api.post("/auth/login", data);
@@ -170,7 +165,6 @@ export const register = async (data) => {
   }
 };
 
-// Email management
 export const addEmail = async (address) => {
   try {
     const res = await api.post("/users/emails", { address });
@@ -198,5 +192,4 @@ export const removeEmail = async (address) => {
   }
 };
 
-// ✅ Add this at the very end for default import support
 export default api;

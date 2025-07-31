@@ -59,7 +59,6 @@ export default function Navbar() {
   return (
     <header className="w-full shadow-md sticky top-0 z-50 bg-white">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Logo */}
         <Link
           to="/"
           className="text-2xl font-extrabold tracking-tight text-blue-600"
@@ -67,7 +66,6 @@ export default function Navbar() {
           BOOK<span className="text-indigo-700">HUB</span>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden lg:flex gap-8 text-gray-700 font-medium text-sm">
           <Link to="/" className="hover:text-indigo-800 transition">
             HOME
@@ -83,9 +81,7 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        {/* Right Section */}
         <div className="flex items-center gap-4">
-          {/* Cart */}
           {user && (
             <Link
               to="/cart"
@@ -93,11 +89,9 @@ export default function Navbar() {
             >
               <FaShoppingCart size={20} />
               <span>[{cartItems?.length ?? 0}]</span>{" "}
-              {/* Replace 0 with actual cart count logic */}
             </Link>
           )}
 
-          {/* User Menu */}
           {user ? (
             <div className="relative" ref={dropdownRef}>
               <div
@@ -143,7 +137,6 @@ export default function Navbar() {
             </div>
           )}
 
-          {/* Mobile Toggle */}
           <button
             className="lg:hidden text-gray-700"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -153,7 +146,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Nav */}
       {mobileMenuOpen && (
         <div className="lg:hidden px-6 pb-4 text-sm font-medium text-gray-700 space-y-3">
           <Link to="/" onClick={() => setMobileMenuOpen(false)}>

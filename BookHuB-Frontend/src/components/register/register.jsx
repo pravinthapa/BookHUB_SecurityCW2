@@ -93,14 +93,13 @@ export default function Register() {
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 flex justify-center items-center px-4 pt-20 pb-10">
       <div className="w-full max-w-lg bg-white/90 backdrop-blur-lg shadow-2xl rounded-2xl border border-blue-200 p-8">
         <h2 className="text-3xl font-extrabold text-blue-600 text-center mb-2 tracking-tight">
-          Register 🔐
+          Register 
         </h2>
         <p className="text-sm text-center text-gray-600 mb-6">
           Create a secure account to get started
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-5 text-sm">
-          {/* Name */}
           <div>
             <label className="font-medium text-blue-700 block mb-1">
               Full Name
@@ -118,7 +117,6 @@ export default function Register() {
             )}
           </div>
 
-          {/* Email */}
           <div>
             <label className="font-medium text-blue-700 block mb-1">
               Email
@@ -136,7 +134,6 @@ export default function Register() {
             )}
           </div>
 
-          {/* Password */}
           <div>
             <label className="font-medium text-blue-700 block mb-1">
               Password
@@ -163,7 +160,6 @@ export default function Register() {
             )}
           </div>
 
-          {/* Confirm Password */}
           <div>
             <label className="font-medium text-blue-700 block mb-1">
               Confirm Password
@@ -183,7 +179,6 @@ export default function Register() {
             )}
           </div>
 
-          {/* Submit */}
           <button
             type="submit"
             className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 mt-2 rounded-lg font-semibold shadow-md transition-all"
@@ -191,7 +186,6 @@ export default function Register() {
             Create Account
           </button>
 
-          {/* Sign-in prompt */}
           <div className="text-center text-sm text-gray-600 mt-4">
             Already have an account?{" "}
             <Link

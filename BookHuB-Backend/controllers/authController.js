@@ -83,7 +83,7 @@ const login = async (req, res) => {
         .status(403)
         .json({ msg: "User is blocked. Please contact support." });
 
-    // Password expiry: 90 days
+    // Password expiry: 90 day
     if (
       user.passwordLastChanged &&
       Date.now() - new Date(user.passwordLastChanged).getTime() >
@@ -107,7 +107,7 @@ const login = async (req, res) => {
 
         // Step 2: Save OTP and expiry (e.g., 5 mins)
         user.otp = generatedOTP;
-        user.otpExpiry = Date.now() + 5 * 60 * 1000; // 5 minutes
+        user.otpExpiry = Date.now() + 5 * 60 * 1000; 
         await user.save();
 
         // Step 3: Send OTP to user's email

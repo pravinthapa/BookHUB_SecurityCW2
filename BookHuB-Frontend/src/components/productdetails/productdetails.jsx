@@ -98,10 +98,8 @@ export default function ProductDetails() {
           {/* Price */}
           <div>
             <h3 className="text-2xl font-bold text-gray-800">Rs {totalPrice}</h3>
-            {/* <p className="text-sm text-gray-500">(Rs {product.pricePerGram?.toFixed(2)})</p> */}
           </div>
 
-          {/* Actions */}
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <button
               onClick={handleAddToCart}
@@ -121,13 +119,7 @@ export default function ProductDetails() {
         </div>
       </div>
 
-      {/* Fun Fruit Fact (replaces You May Also Like) */}
-      {/* <div className="mt-16 p-6 bg-green-50 rounded-xl shadow-sm border border-blue-100">
-        <h2 className="text-xl font-bold text-blue-700 mb-2">BookHuB Fact</h2>
-        <p className="text-gray-700 text-sm leading-relaxed">
-        "Did you know? Most fruits are naturally rich in vitamins, antioxidants, and fiber — making them one of nature’s best snacks for a healthy lifestyle. At Fruitmandu, we deliver this natural goodness fresh to your doorstep!"
-        </p>
-      </div> */}
+      
     </div>
   );
 }

@@ -5,15 +5,14 @@ import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-blue-400 via-blue-400 to-blue-600 text-white px-6 sm:px-10 lg:px-16 pt-16 pb-10">
-      {/* Container with glass effect */}
       <div className="max-w-7xl mx-auto backdrop-blur-sm bg-white/10 rounded-3xl p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-        {/* Brand Section */}
         <div className="space-y-5">
           <p>BOOKHUB</p>
           <p className="text-sm text-white leading-relaxed">
-            Get free and bargain bestsellers for Kindle, Nook, and more, as well
-            as updates from your favorite authors. Sign up free today, and start
-            reading instantly!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+            consequuntur consequatur obcaecati commodi qui? Iusto aperiam,
+            voluptatem dolore, enim adipisci amet et fugiat harum fuga doloribus
+            sed in quisquam impedit!
           </p>
           <div className="flex gap-5 mt-5 text-2xl text-white">
             <a
@@ -51,7 +50,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Shop Links */}
         <div className="space-y-3 text-sm">
           <h3 className="uppercase text-white text-xs font-semibold mb-3 tracking-wide">
             Shop
@@ -70,7 +68,6 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Company Info */}
         <div className="space-y-3 text-sm">
           <h3 className="uppercase text-white text-xs font-semibold mb-3 tracking-wide">
             Company
@@ -89,7 +86,6 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* Newsletter Signup */}
         <div className="space-y-5">
           <h3 className="uppercase text-white text-xs font-semibold tracking-wide">
             Join Our Bookhub

@@ -85,16 +85,16 @@ const MyOrder = () => {
                     <td className="px-4 py-3">{order.phone}</td>
                     <td className="px-4 py-3 text-center">
                       {order.status === "pending" && (
-                        <span className="text-yellow-600 font-semibold">⏳ Pending</span>
+                        <span className="text-yellow-600 font-semibold"> Pending</span>
                       )}
                       {order.status === "shipped" && (
-                        <span className="text-blue-600 font-semibold">🚚 Shipped</span>
+                        <span className="text-blue-600 font-semibold"> Shipped</span>
                       )}
                       {order.status === "delivered" && (
-                        <span className="text-green-600 font-semibold">✓ Delivered</span>
+                        <span className="text-green-600 font-semibold"> Delivered</span>
                       )}
                       {order.status === "cancelled" && (
-                        <span className="text-red-600 font-semibold">❌ Cancelled</span>
+                        <span className="text-red-600 font-semibold">Cancelled</span>
                       )}
                     </td>
                     <td className="px-4 py-3 text-center">

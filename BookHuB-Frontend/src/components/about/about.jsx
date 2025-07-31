@@ -5,7 +5,6 @@ import { FaTruck, FaAppleAlt, FaMedal, FaHeadset } from "react-icons/fa";
 export default function About() {
   return (
     <div className="w-full bg-white text-gray-800 pt-16 pb-24">
-      {/* Hero Section */}
       <section className="bg-white py-16 px-6 md:px-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           <img

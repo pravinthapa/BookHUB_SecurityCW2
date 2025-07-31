@@ -124,7 +124,6 @@ const Cart = () => {
           )}
         </div>
 
-        {/* Right: Summary */}
         <div className="bg-white/60 backdrop-blur-lg p-6 rounded-3xl shadow-md space-y-6">
           <h2 className="text-3xl font-bold text-blue-700 mb-4">Checkout</h2>
 
@@ -160,7 +159,6 @@ const Cart = () => {
             </div>
           </div>
 
-          {/* Payment Options */}
           <div>
             <h4 className="font-medium text-gray-700 mb-2">Choose Payment</h4>
             <div className="flex flex-col gap-2">
@@ -183,7 +181,6 @@ const Cart = () => {
 
           {error && <div className="text-red-500 text-sm">{error}</div>}
 
-          {/* Trigger Payment */}
           {paymentMethod !== "esewa" ? (
             <button
               onClick={() =>
@@ -274,7 +271,6 @@ const Cart = () => {
         </div>
       </div>
 
-      {/* Success Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center">
           <div className="bg-white p-6 rounded-xl text-center shadow-lg max-w-md w-full">

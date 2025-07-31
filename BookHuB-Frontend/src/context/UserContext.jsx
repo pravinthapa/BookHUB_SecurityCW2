@@ -1,4 +1,3 @@
-// src/context/usercontext.jsx
 import React, { createContext, useState, useEffect } from "react";
 
 export const UserContext = createContext();
@@ -24,7 +23,7 @@ export const UserProvider = ({ children }) => {
             const data = await res.json();
             setUser(data);
           } else {
-            setUser(null); // Invalid token
+            setUser(null); 
           }
         } catch (error) {
           console.error("Error fetching user:", error);

@@ -126,14 +126,12 @@ function ProductCard({ product }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Discount Badge */}
       {discount > 0 && (
         <div className="absolute top-3 left-3 z-10 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
           -{discount}% OFF
         </div>
       )}
 
-      {/* Heart Icon */}
       <button
         onClick={handleLike}
         className="absolute top-3 right-3 z-10 p-2 rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all duration-200 shadow-md"
@@ -148,20 +146,12 @@ function ProductCard({ product }) {
         />
       </button>
 
-      {/* Product Image */}
       <div className="relative h-56 bg-gradient-to-br from-lime-50 to-blue-100 overflow-hidden">
         <div
           className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
           style={{ backgroundImage: `url(${imgSrc})` }}
         />
 
-        {/* Fresh Badge */}
-        {/* <div className="absolute bottom-3 left-3 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold flex items-center gap-1">
-          <Zap size={12} />
-          Fresh
-        </div> */}
-
-        {/* Stock Status */}
         {stock === 0 && (
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
             <span className="bg-red-500 text-white px-4 py-2 rounded-full font-semibold">
@@ -171,28 +161,17 @@ function ProductCard({ product }) {
         )}
       </div>
 
-      {/* Product Info */}
       <div className="p-5 space-y-3">
-        {/* Product Name & Rating */}
         <div className="flex items-start justify-between">
           <h3 className="font-bold text-lg text-gray-800 leading-tight">
             {name}
           </h3>
-          {/* <div className="flex items-center gap-1 text-yellow-500">
-            <Star size={14} className="fill-current" />
-            <span className="text-xs text-gray-600">4.8</span>
-          </div> */}
         </div>
 
         {/* Price Section */}
         <div className="space-y-1">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold text-blue-600">Rs {price}</span>
-            {/* {discount > 0 && (
-              <span className="text-sm text-gray-400 line-through">
-                Rs {originalPrice}
-              </span>
-            )} */}
           </div>
           <div className="flex items-center gap-2 text-xs text-gray-500">
             <Truck size={12} />

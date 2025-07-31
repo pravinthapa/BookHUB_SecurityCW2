@@ -44,7 +44,6 @@ export default function Contact() {
 
   return (
     <div className="w-full bg-gradient-to-b from-blue-50 to-white py-20 px-4 sm:px-6 lg:px-24">
-      {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-5xl font-extrabold text-blue-900"> Contact Us</h1>
         <p className="text-gray-600 mt-3 text-lg">
@@ -52,9 +51,7 @@ export default function Contact() {
         </p>
       </div>
 
-      {/* Contact Info & Form */}
       <div className="grid md:grid-cols-2 gap-12 mb-20">
-        {/* Contact Info */}
         <div className="bg-white rounded-xl shadow-md p-8 border border-blue-100 space-y-6">
           <h2 className="text-2xl font-semibold text-blue-800 mb-4">
             Get In Touch
@@ -91,7 +88,6 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <form
           onSubmit={handleSubmit}
           className="bg-white p-8 rounded-xl shadow-md border border-blue-100 space-y-5"
@@ -143,7 +139,6 @@ export default function Contact() {
         </form>
       </div>
 
-      {/* Map Section */}
       <div className="rounded-xl overflow-hidden shadow-lg border border-blue-100">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8098721310366!2d85.35553837534103!3d27.692567376192988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bb297270d3f%3A0x7bce0075d98f7859!2sDot%20Trade!5e0!3m2!1sen!2snp!4v1719828582076!5m2!1sen!2snp"

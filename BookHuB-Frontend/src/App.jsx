@@ -1,16 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Components
 import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
-import Register from "./components/register/Register";
 import MyOrder from "./components/myorder/myorder";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Cart from "./components/cart/cart";
-import AllProducts from "./components/allproducts/allproducts"; // ✅ NEW
+import AllProducts from "./components/allproducts/allproducts"; 
 import Profile from "./components/profile";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -25,6 +23,7 @@ import VerifyEmail from "./components/verify/VerifyEmail";
 
 import { Toaster } from "react-hot-toast";
 import Login from "./components/login/login";
+import Register from "./components/register/register";
 
 const App = () => {
   return (

@@ -10,7 +10,7 @@ export default function Profile() {
     phone: "",
     email: "",
     address: "",
-    dob: "", // ✅ Added DOB
+    dob: "",
   });
 
   const [passwords, setPasswords] = useState({
@@ -41,7 +41,7 @@ export default function Profile() {
           phone: data.phone || "",
           email: data.email || "",
           address: data.address || "",
-          dob: data.dob || "", // ✅ Load DOB
+          dob: data.dob || "", 
         });
         setId(data._id);
         setEmails(data.emails || []);
@@ -66,7 +66,7 @@ export default function Profile() {
     e.preventDefault();
     setSaving(true);
     try {
-      await updateProfile(form); // ✅ Includes DOB
+      await updateProfile(form); 
       toast.success("Profile updated successfully");
     } catch (err) {
       toast.error(err.message || "Failed to update profile");
@@ -106,7 +106,6 @@ export default function Profile() {
     }
   };
 
-  // 2FA: Start setup (get QR)
   const handleEnable2FA = async () => {
     setTwoFALoading(true);
     try {
@@ -119,7 +118,6 @@ export default function Profile() {
     }
   };
 
-  // 2FA: Confirm setup
   const handleConfirm2FA = async (e) => {
     e.preventDefault();
     setTwoFALoading(true);
@@ -138,7 +136,6 @@ export default function Profile() {
     }
   };
 
-  // 2FA: Disable
   const handleDisable2FA = async () => {
     setTwoFALoading(true);
     try {
@@ -151,7 +148,6 @@ export default function Profile() {
     }
   };
 
-  // Add a new email
   const handleAddEmail = async (e) => {
     e.preventDefault();
     setEmailLoading(true);
@@ -167,7 +163,6 @@ export default function Profile() {
     }
   };
 
-  // Remove an email
   const handleRemoveEmail = async (address) => {
     setEmailLoading(true);
     try {
@@ -192,7 +187,6 @@ export default function Profile() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white px-4 py-10 flex justify-center items-start">
       <div className="w-full max-w-3xl bg-white border border-blue-200 rounded-2xl p-8 shadow-lg space-y-12">
-        {/* Header */}
         <div className="text-center">
           <h1 className="text-3xl font-bold text-blue-700 mb-2">
             BookHuB Account
@@ -263,7 +257,6 @@ export default function Profile() {
           </p>
         </div>
 
-        {/* Profile Section */}
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="flex items-center gap-3 mb-6">
             <span className="text-2xl">👤</span>
@@ -352,14 +345,12 @@ export default function Profile() {
           </button>
         </form>
 
-        {/* Divider */}
         <div className="flex items-center gap-4">
           <hr className="flex-1 border-t border-blue-300" />
           <span className="text-2xl"></span>
           <hr className="flex-1 border-t border-blue-300" />
         </div>
 
-        {/* Change Password Section */}
         <form onSubmit={handleChangePassword} className="space-y-6">
           <h3 className="text-xl font-semibold text-blue-700 mb-4 flex items-center gap-2">
             Change Password

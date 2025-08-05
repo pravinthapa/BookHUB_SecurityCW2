@@ -72,18 +72,7 @@ const Cart = () => {
                 <div className="flex-1">
                   <h4 className="font-semibold text-lg">{item.title}</h4>
                   <div className="flex items-center gap-3 mt-2 text-sm">
-                    {/* <label>Weight:</label> */}
-                    {/* <select
-                      value={item.weight}
-                      onChange={(e) => updateWeight(item.id, item.weight, Number(e.target.value))}
-                      className="border px-2 py-1 rounded"
-                    >
-                      {weightOptions.map((w) => (
-                        <option key={w} value={w}>
-                          {w === 1000 ? "1kg" : `${w}g`}
-                        </option>
-                      ))}
-                    </select> */}
+                   
                   </div>
                   <div className="flex items-center gap-3 mt-2 text-sm">
                     <span>Qty:</span>
